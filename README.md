@@ -66,8 +66,8 @@ Technologies Used
    Font Awesome: Icons library.
 
 Project Structure
-   GLADfood/
-   ├── assets/
+      GLADfood/
+      ├── assets/
       |   ├──menu/
       |   |   ├──burger.png
       |   |   ├──butterChicken.jpg
