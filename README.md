@@ -66,25 +66,40 @@ Technologies Used
    Font Awesome: Icons library.
 
 Project Structure
-      glad-food-corner/
-   ├── assets/
-   │   ├── about-hero.jpg
-   │   ├── team-member1.jpg
-   │   ├── team-member2.jpg
-   │   ├── team-member3.jpg
-   │   ├── team-member4.jpg
-   │   ├── appetizer1.jpg
-   │   ├── appetizer2.jpg
-   │   ├── maincourse1.jpg
-   │   ├── maincourse2.jpg
-   │   ├── rotFood.png
-   │   └── ...
-   ├── styles.css
-   ├── app.js
-   ├── index.html
-   ├── home.html
-   ├── menu.html
-   ├── about.html
-   ├── cart.html
-   └── README.md
+      GLADfood/
+      ├── assets/
+      |   ├──menu/
+      |   |   ├──burger.png
+      |   |   ├──butterChicken.jpg
+      |   |   ├──chickenWings.jpg
+      |   |   ├──classicSole.jpg
+      |   |   ├──coffee.jpg
+      |   |   ├──eggnog.jpg
+      |   |   ├──fruitBoard.jpg
+      |   |   ├──gulabJamun.jpg
+      |   |   └── ...
+      │   ├── 24hrs.jpg
+      │   ├── background.jpg
+      │   ├── fdBack.jpg
+      │   ├── foodBack.jpg
+      │   ├── rotFood.jpg
+      │   ├── logo.jpg
+      │   ├── qaulity.jpg
+      │   ├── freshIng.jpg
+      │   ├── chefGautam.jpg
+      │   ├── chef.jpg
+      │   └── ...
+      ├── styles.css
+      ├── styleLog.css
+      ├── app.js
+      ├── appLog.js
+      ├── scriptLog.js
+      ├── indexLog.php
+      ├── connect.php
+      ├── register.php
+      ├── home.html
+      ├── menu.html
+      ├── about.html
+      ├── cart.html
+      └── README.md
 
