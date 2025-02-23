@@ -10,8 +10,6 @@ Welcome to GLAD Food Corner! This repository contains the code for an engaging a
 - [Usage](#usage)
 - [Technologies Used](#technologies-used)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -31,6 +29,62 @@ Follow these steps to set up the project locally:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/glad-food-corner.git
-   cd glad-food-corner
+   [git clone https://github.com/yourusername/glad-food-corner.git
+   cd glad-food-corner](https://github.com/Gautam08905/FoodOrder.git)
    
+2.Install dependencies: Ensure you have the following dependencies installed:
+   -AngularJS
+   -Bootstrap
+   -Font Awesome
+   
+3.Create the Database in phpMyAdmin:
+   database name:-foodapp
+   table name:-users
+   with column:-id(with autoincrement),username,email,password
+
+4.Run the project: Open the project in your preferred code editor and use a live server extension to view the website on your local machine.
+
+Usage
+   Home Page
+      The home page welcomes visitors with a hero section and highlights popular items. Users can navigate to other sections such as Menu, About, and Cart.
+
+   Menu Page
+      The menu page displays various categories and items. Users can add items to the cart, and if they are not logged in, they will be redirected to the login page.
+
+   About Page
+      The about page provides information about the restaurant, its story, values, team, and contact details.
+
+   Cart Page
+      The cart page shows the items added by the user. Users can view and manage their cart.
+
+Technologies Used
+   HTML5: Markup language for creating web pages.
+   CSS3: Styling the website.
+   JavaScript: Adding interactivity.
+   AngularJS: Framework for building dynamic web applications.
+   Bootstrap: Responsive design framework.
+   Font Awesome: Icons library.
+
+Project Structure
+      glad-food-corner/
+   ├── assets/
+   │   ├── about-hero.jpg
+   │   ├── team-member1.jpg
+   │   ├── team-member2.jpg
+   │   ├── team-member3.jpg
+   │   ├── team-member4.jpg
+   │   ├── appetizer1.jpg
+   │   ├── appetizer2.jpg
+   │   ├── maincourse1.jpg
+   │   ├── maincourse2.jpg
+   │   ├── rotFood.png
+   │   └── ...
+   ├── styles.css
+   ├── app.js
+   ├── index.html
+   ├── home.html
+   ├── menu.html
+   ├── about.html
+   ├── cart.html
+   └── README.md
+
