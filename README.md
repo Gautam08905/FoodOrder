@@ -32,19 +32,20 @@ Follow these steps to set up the project locally:
    [git clone https://github.com/yourusername/glad-food-corner.git
    cd glad-food-corner](https://github.com/Gautam08905/FoodOrder.git)
    
-2.Install dependencies: Ensure you have the following dependencies installed:
+2.**Install dependencies: Ensure you have the following dependencies installed:**
    -AngularJS
    -Bootstrap
    -Font Awesome
    
-3.Create the Database in phpMyAdmin:
+3.**Create the Database in phpMyAdmin:**
    database name:-foodapp
    table name:-users
    with column:-id(with autoincrement),username,email,password
 
-4.Run the project: Open the project in your preferred code editor and use a live server extension to view the website on your local machine.
+4.**Run the project:** 
+	Open the project in your preferred code editor and use a live server extension to view the website on your local machine.
 
-Usage
+**Usage**
    Home Page
       The home page welcomes visitors with a hero section and highlights popular items. Users can navigate to other sections such as Menu, About, and Cart.
 
@@ -57,7 +58,7 @@ Usage
    Cart Page
       The cart page shows the items added by the user. Users can view and manage their cart.
 
-Technologies Used
+**Technologies Used**
    HTML5: Markup language for creating web pages.
    CSS3: Styling the website.
    JavaScript: Adding interactivity.
@@ -65,41 +66,4 @@ Technologies Used
    Bootstrap: Responsive design framework.
    Font Awesome: Icons library.
 
-Project Structure
-      GLADfood/
-      ├── assets/
-      |   ├──menu/
-      |   |   ├──burger.png
-      |   |   ├──butterChicken.jpg
-      |   |   ├──chickenWings.jpg
-      |   |   ├──classicSole.jpg
-      |   |   ├──coffee.jpg
-      |   |   ├──eggnog.jpg
-      |   |   ├──fruitBoard.jpg
-      |   |   ├──gulabJamun.jpg
-      |   |   └── ...
-      │   ├── 24hrs.jpg
-      │   ├── background.jpg
-      │   ├── fdBack.jpg
-      │   ├── foodBack.jpg
-      │   ├── rotFood.jpg
-      │   ├── logo.jpg
-      │   ├── qaulity.jpg
-      │   ├── freshIng.jpg
-      │   ├── chefGautam.jpg
-      │   ├── chef.jpg
-      │   └── ...
-      ├── styles.css
-      ├── styleLog.css
-      ├── app.js
-      ├── appLog.js
-      ├── scriptLog.js
-      ├── indexLog.php
-      ├── connect.php
-      ├── register.php
-      ├── home.html
-      ├── menu.html
-      ├── about.html
-      ├── cart.html
-      └── README.md
 
