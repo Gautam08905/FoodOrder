@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="gladFoodApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <title>GLAD Food Corner</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--icon font style-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <div id="progress">
+    <span id="progress_value"><i class="fa-solid fa-arrow-up"></i></span>
+  </div>
+  
+
+    <header id="header" ng-controller="HeaderController as headerCtrl">
+        <div class="logo">
+            <i class="fa-solid fa-utensils"></i>
+            <h3>GLAD Food Corner</h3>
+        </div>
+        <nav>
+            <ul class="mainUl">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            <button class="btn-login" id="lgBtn"  onclick="login()">Login</button>
+            <!-- <button class="btn-login" id="loutBtn" style="display: none;" onclick="logout()">Logout</button> -->
+            <div class="profile" id="profile" style="display: none;">
+                <img src="assets/prof.jpg" alt="Profile Icon" id="profile-icon">
+                <div class="dropdown-menu" id="dropdown-menu">
+                    <div class="profile-info">
+                        <img src="assets/prof.jpg" alt="Profile Picture">
+                        <p id="proPara">User08905</p>
+                    </div>
+                    <ul >
+                        <li><a href="#">Edit Profile</a></li>
+                        <li><a href="#">Settings & Privacy</a></li>
+                        <li><a href="#">Help & Support</a></li>
+                        <li><a href="#">Display & Accessibility</a></li>
+                        <li><a href="#" onclick="logout()">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main ng-controller="MainController as mainCtrl">
+        <section class="hero">
+            <div class="hero-fst">
+                <h2>Welcome to <br>GLAD Food Corner!</h2>
+                <p>Discover the deliciousness we have to offer.</p>
+                <a href="menu.html" class="cta-button">Explore Our Menu</a>
+            </div>
+            <div class="rot_img">
+                <img src="assets/rotFood.png" alt="">
+            </div>
+        </section>
+        <section class="highlights">
+            <div class="highlight" ng-repeat="highlight in mainCtrl.highlights">
+                <img src='{{ highlight.img }}' alt="img">
+                <h3>{{ highlight.title }}</h3>
+                <p>{{ highlight.description }}</p>
+            </div>
+        </section>
+        <section class="menu-preview">
+            <h2><i class="fa-solid fa-burger"></i> Most Popular Items</h2>
+            <div class="dish_main">
+                <div class="dish" ng-repeat="dish in mainCtrl.popularDishes">
+                    <div>
+                        <img src='{{ dish.img }}' alt="">
+                    </div>
+                    <div class="dish_des">
+                        <h5 class="h_class">
+                            <span>{{ dish.name }}</span>
+                            <span id="sp2">₹{{ dish.price }}</span>
+                        </h5>
+                        <small>{{ dish.description }}</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chefs">
+          <h5>Team Members</h5>
+          <h2>Our Master Chefs</h2>
+          <div class="chefInfo">
+            <div class="cf" ng-repeat="cf in mainCtrl.chefInf">
+              <img src="{{cf.img}}" alt="">
+              <h3>{{cf.name}}</h3>
+              <h5>{{cf.desig}}</h5>
+            
+              <div class="media">
+                <a href="{{cf.insta}}"  target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="{{cf.linked}}"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="{{cf.google}}"  target="_blank"><i class="fa-brands fa-google"></i></a>
+              </div>
+            </div>
+            
+          </div>
+        </section>
+        
+        <div class="foot1">
+          Order food be Good!!
+      </div>
+    </main>
+    
+    <script src="app.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
